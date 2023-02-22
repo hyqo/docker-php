@@ -2,29 +2,29 @@
 
 ![](https://img.shields.io/badge/-8.2.3-informational) ![](https://img.shields.io/badge/-8.1.16-informational) ![](https://img.shields.io/badge/-8.0.28-informational) 
 
-[![Docker Image Size (latest semver)](https://img.shields.io/docker/image-size/hyqo/php-alpine/8.2-zts?label=w%2Fo%20graphic%20libs)](https://hub.docker.com/r/hyqo/php-alpine)
-[![Docker Image Size (latest semver)](https://img.shields.io/docker/image-size/hyqo/php-alpine/%%LATEST_SYMFONY_TAG%%?label=w%2F%20symfony-cli)](https://hub.docker.com/r/hyqo/php-alpine)
-[![Docker Image Size (latest semver)](https://img.shields.io/docker/image-size/hyqo/php-alpine/8.2-graphic-zts?label=w%2F%20graphic%20libs)](https://hub.docker.com/r/hyqo/php-alpine)
-[![Docker Image Size (latest semver)](https://img.shields.io/docker/pulls/hyqo/php-alpine)](https://hub.docker.com/r/hyqo/php-alpine)
+[![Docker Image Size (latest semver)](https://img.shields.io/docker/image-size/hyqo/php/8.2-zts?label=w%2Fo%20graphic%20libs)](https://hub.docker.com/r/hyqo/php)
+[![Docker Image Size (latest semver)](https://img.shields.io/docker/image-size/hyqo/php/%%LATEST_SYMFONY_TAG%%?label=w%2F%20symfony-cli)](https://hub.docker.com/r/hyqo/php)
+[![Docker Image Size (latest semver)](https://img.shields.io/docker/image-size/hyqo/php/8.2-graphic-zts?label=w%2F%20graphic%20libs)](https://hub.docker.com/r/hyqo/php)
+[![Docker Image Size (latest semver)](https://img.shields.io/docker/pulls/hyqo/php)](https://hub.docker.com/r/hyqo/php)
 [![build](https://github.com/hyqo/docker-php-alpine/actions/workflows/build.yml/badge.svg?event=push)](https://github.com/hyqo/docker-php-alpine/actions/workflows/build.yml)
 
 arch: linux/amd64, linux/arm64
 
 ```
-docker pull hyqo/php-alpine:8.2-fpm
-docker pull hyqo/php-alpine:8.2-cli
-docker pull hyqo/php-alpine:8.2-zts
+docker pull hyqo/php:8.2-fpm
+docker pull hyqo/php:8.2-cli
+docker pull hyqo/php:8.2-zts
 ```
 
-|                                   | prod    | dev     |
-|-----------------------------------|---------|---------|
-| Composer `2.5.2`   | &check; | &check; |
-| Xdebug `3.2.0`       |         | &check; |
-| PHPStan `1.9.18`     |         | &check; |
-| Redis `5.3.7`         | &check; | &check; |
-| PDO, PDO PgSQL                    | &check; | &check; |
-| zip, pcntl, event, ev, ffi        | &check; | &check; |
-| OPcache                           | &check; |         |
+|                                 | prod    | dev     |
+|---------------------------------|---------|---------|
+| Composer `2.5.4` | &check; | &check; |
+| Xdebug `3.2.0`     |         | &check; |
+| PHPStan `1.10.1`   |         | &check; |
+| Redis `5.3.7`       | &check; | &check; |
+| PDO, PDO MySQL                  | &check; | &check; |
+| zip, pcntl, event, ev, ffi      | &check; | &check; |
+| OPcache                         | &check; |         |
 
 Containers with graphic libs include:
 
@@ -49,8 +49,6 @@ Containers with graphic libs include:
 | 8.0-fpm | 8.0-fpm-dev |
 | 8.0-cli | 8.0-cli-dev |
 
-
-%%SYMFONY_TAGS_TABLE%%
 
 | prod | dev |
 | --- | --- |

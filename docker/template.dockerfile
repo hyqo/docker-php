@@ -19,7 +19,7 @@ ARG REDIS_VERSION
 RUN install-php-extensions \
         @composer-${COMPOSER_VERSION} \
         igbinary redis-${REDIS_VERSION} \
-        intl xsl zip-stable yaml\
+        intl xsl zip-stable yaml \
         pdo-stable pdo_mysql-stable \
         pcntl ffi \
         sockets-stable ev-stable event-stable

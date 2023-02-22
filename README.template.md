@@ -39,6 +39,4 @@ Containers with graphic libs include:
 
 %%TAGS_TABLE%%
 
-%%SYMFONY_TAGS_TABLE%%
-
 %%GRAPHIC_TAGS_TABLE%%

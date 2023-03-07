@@ -3,10 +3,9 @@
 ![](https://img.shields.io/badge/-8.2.3-informational) ![](https://img.shields.io/badge/-8.1.16-informational) ![](https://img.shields.io/badge/-8.0.28-informational) 
 
 [![Docker Image Size (latest semver)](https://img.shields.io/docker/image-size/hyqo/php/8.2-zts?label=w%2Fo%20graphic%20libs)](https://hub.docker.com/r/hyqo/php)
-[![Docker Image Size (latest semver)](https://img.shields.io/docker/image-size/hyqo/php/%%LATEST_SYMFONY_TAG%%?label=w%2F%20symfony-cli)](https://hub.docker.com/r/hyqo/php)
 [![Docker Image Size (latest semver)](https://img.shields.io/docker/image-size/hyqo/php/8.2-graphic-zts?label=w%2F%20graphic%20libs)](https://hub.docker.com/r/hyqo/php)
 [![Docker Image Size (latest semver)](https://img.shields.io/docker/pulls/hyqo/php)](https://hub.docker.com/r/hyqo/php)
-[![build](https://github.com/hyqo/docker-php-alpine/actions/workflows/build.yml/badge.svg?event=push)](https://github.com/hyqo/docker-php-alpine/actions/workflows/build.yml)
+[![build](https://github.com/hyqo/docker-php/actions/workflows/build.yml/badge.svg?event=push)](https://github.com/hyqo/docker-php/actions/workflows/build.yml)
 
 arch: linux/amd64, linux/arm64
 

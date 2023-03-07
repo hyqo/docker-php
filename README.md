@@ -19,9 +19,9 @@ docker pull hyqo/php:8.2-zts
 |---------------------------------|---------|---------|
 | Composer `2.5.4` | &check; | &check; |
 | Xdebug `3.2.0`     |         | &check; |
-| PHPStan `1.10.1`   |         | &check; |
+| PHPStan `1.10.4`   |         | &check; |
 | Redis `5.3.7`       | &check; | &check; |
-| PDO, PDO MySQL                  | &check; | &check; |
+| PDO, PDO PostgreSQL             | &check; | &check; |
 | zip, pcntl, event, ev, ffi      | &check; | &check; |
 | OPcache                         | &check; |         |
 

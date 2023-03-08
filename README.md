@@ -21,9 +21,9 @@ docker pull hyqo/php:8.2-zts
 | Xdebug `3.2.0`     |         | &check; |
 | PHPStan `1.10.4`   |         | &check; |
 | Redis `5.3.7`       | &check; | &check; |
-| PDO, PDO PostgreSQL             | &check; | &check; |
+| PDO, PDO MySQL                  | &check; | &check; |
 | zip, pcntl, event, ev, ffi      | &check; | &check; |
-| OPcache                         | &check; |         |
+| OPcache                         | &check; | &check; |
 
 Containers with graphic libs include:
 

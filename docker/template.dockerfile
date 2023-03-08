@@ -19,7 +19,7 @@ ARG REDIS_VERSION
 RUN install-php-extensions \
         @composer-${COMPOSER_VERSION} \
         igbinary redis-${REDIS_VERSION} \
-        intl xsl zip-stable yaml \
+        intl xsl zip-stable yaml opcache \
         pdo-stable pdo_mysql-stable \
         pcntl ffi \
         sockets-stable ev-stable event-stable
@@ -40,14 +40,17 @@ RUN cd /opt && composer require phpstan/phpstan:$PHPSTAN_VERSION
 
 ENV PATH "$PATH:/opt/vendor/bin"
 
-COPY environments/dev.ini "$PHP_INI_DIR/conf.d/00-development.ini"
+COPY environments/dev/xdebug.ini "$PHP_INI_DIR/conf.d/zz-xdebug.ini"
+COPY environments/opcache.ini "$PHP_INI_DIR/conf.d/zz-opcache.ini"
 
 EXPOSE 9003
 
 FROM build as prod-env
 
-RUN mv "$PHP_INI_DIR/php.ini-production" "$PHP_INI_DIR/php.ini" && \
-    install-php-extensions opcache
+RUN mv "$PHP_INI_DIR/php.ini-production" "$PHP_INI_DIR/php.ini"
+
+COPY environments/opcache.ini "$PHP_INI_DIR/conf.d/zz-opcache.ini"
+COPY environments/prod/opcache.ini "$PHP_INI_DIR/conf.d/zz-opcache-prod.ini"
 
 # mode
 FROM ${PHP_ENV}-env as fpm-mode

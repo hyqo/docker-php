@@ -23,7 +23,7 @@ docker pull %%IMAGE%%:%%LATEST_VERSION%%-zts
 | Redis `%%REDIS_VERSION%%`       | &check; | &check; |
 | PDO, PDO MySQL                  | &check; | &check; |
 | zip, pcntl, event, ev, ffi      | &check; | &check; |
-| OPcache                         | &check; |         |
+| OPcache                         | &check; | &check; |
 
 Containers with graphic libs include:
 
